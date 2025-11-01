@@ -19,8 +19,7 @@ header{
     z-index: 1000px;
 }
 .logomarca{
-    height: 60px;
-    padding-top: 8px;
+    height: 45px;
 }
 nav{
     display: flex;
@@ -29,7 +28,7 @@ nav{
     padding: 15px 20px;
     color: white;
     height: 35px;
-    width: calc(100% - 30px);
+    width: calc(100% - 40px);
     
     
 }
@@ -83,7 +82,7 @@ header a{
     transform: translateY(-5px) scale(1.06);
 }
 button{
-    padding: 10px;
+    padding: 10px 5px;
     background-color: #530101;
     border-radius: 8px;
     cursor: pointer;
@@ -180,10 +179,13 @@ main{
 }
 
 footer {
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
     padding: 10px 10px;
     background-color: rgb(90, 0, 0, 0.5);
     color: white;
+}
+
+.endereco{
+    margin-bottom: 5px;
 }
 
