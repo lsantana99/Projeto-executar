@@ -36,7 +36,7 @@ nav{
 .menu{
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -160,8 +160,12 @@ main{
     box-shadow: 2px 2px 8px black;
 }
 .part2 h2{
-    margin: 15px 0px;
-    padding-left: 15px
+    margin-top: 8px;
+    padding-left: 15px;
+    text-align: center;
+    background-image: linear-gradient(to right, #c70000, #5f0000);
+    padding: 5px;
+
 }
 .part2 p{
     text-align: left;
@@ -193,6 +197,7 @@ main{
 }
 .msv h2{
     margin-bottom: 15px;
+    text-align: center;
 }
 .missao,.visao,.valores{
     columns: 1;
@@ -205,6 +210,10 @@ main{
 }
 .listvalores, .missao, .visao{
     min-width: 120px;
+}
+
+.listvalores{
+    list-style: circle;
 }
 .orcamentobtn{
     display: flex;
