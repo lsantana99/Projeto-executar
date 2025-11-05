@@ -7,8 +7,9 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-image: linear-gradient(to left, #ff8800,#ff0000);
+    background-image: linear-gradient(to left, #a00404,#5f0000);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
 }
 header{
     position: fixed;
@@ -21,6 +22,7 @@ header{
 .logomarca{
     height: 45px;
 }
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -29,14 +31,15 @@ nav{
     color: white;
     height: 35px;
     width: calc(100% - 40px);
-    
-    
 }
+
 .menu{
     list-style: none;
     display: flex;
     gap: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 header a{
     color: white;
     text-decoration: none;
@@ -61,21 +64,66 @@ header a{
     top: 35px;
     background-color: rgb(90, 0, 0);
     list-style: none;
+    padding: 10px;
 }
+
 .submenu li{
-    padding-top: 7px;
+    background-color: rgb(90, 0, 0, 0.8);
 }
+
+.submenu2{
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 50%;
+    list-style: none;
+    transition: 0.2s;
+    border-radius: 5px;
+    padding: 10px 0px;
+    transition: 0.2s;
+}
+
 #projetos:hover .submenu{
     display: block;
     border-radius: 5px;
+    left: 100%;
+    transform: translateX(-90%);
+}
+
+.sublista{
+    padding: 5px 0px;
+    transition: 0.2s;
+}
+
+.sublista:hover{
+    transform: translateY(-3px) scale(1.06);
+}
+
+.sublista a:hover{
+    color: red;
+}
+
+.submenu2 li{
+    width: 80px;
+    text-align: center;
+    transition: 0.2s;
+    border-radius: 5px;
+    padding: 7px 0px;
     background-color: rgb(90, 0, 0, 0.8);
+}
+
+.submenu2 li:hover{
+    transform: translateY(-3px) scale(1.06);
+    color: #a00404;
+}
+
+.submenu2 li a:hover{
+    color: red;
+}
+#paroquia:hover .submenu2{
+    display: block;
     left: 100%;
     transform: translateX(-50%);
-}
-.linksubmenu{
-    display: flex;
-    justify-content: center;
-    padding: 5px 20px;
 }
 .linksubmenu:hover{
     color: red;
@@ -92,8 +140,9 @@ button{
     transition: 0.3s;
 }
 button:hover{
-    background-color: #666666;
+    background-color: #9b9a9a;
     box-shadow: 2px 5px 10px rgb(150, 150, 150);
+    color: black;
 }
 main{
     margin-top: 100px;
@@ -181,8 +230,9 @@ main{
 footer {
     text-align: center;
     padding: 10px 10px;
-    background-color: rgb(90, 0, 0, 0.5);
+    background-color: rgb(90, 0, 0, 0.2);
     color: white;
+    font-size: 14px;
 }
 
 .endereco{
