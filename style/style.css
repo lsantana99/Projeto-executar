@@ -65,6 +65,7 @@ header a{
     background-color: rgb(90, 0, 0);
     list-style: none;
     padding: 10px;
+    margin-left: 50%;
 }
 
 .submenu li{
@@ -80,7 +81,7 @@ header a{
     transition: 0.2s;
     border-radius: 5px;
     padding: 10px 0px;
-    transition: 0.2s;
+    margin-left: 10px;
 }
 
 #projetos:hover .submenu{
@@ -99,12 +100,16 @@ header a{
     transform: translateY(-3px) scale(1.06);
 }
 
+.sublista a{
+    white-space: nowrap;
+}
+
 .sublista a:hover{
     color: red;
 }
 
 .submenu2 li{
-    width: 80px;
+    width: 135px;
     text-align: center;
     transition: 0.2s;
     border-radius: 5px;
@@ -120,7 +125,7 @@ header a{
 .submenu2 li a:hover{
     color: red;
 }
-#paroquia:hover .submenu2{
+.sublista:hover .submenu2{
     display: block;
     left: 100%;
     transform: translateX(-50%);
